@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Gallery</title>
+    <link href="mystyles.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="navbox">
+    
+	
+		<div id="sidenav">
+			<a href="index.html">Home</a>
+			<a href="profile.html">Profile</a>
+			<a href="experience.html">Experience</a>
+			<a href="work_projects.html">Work/Projects</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact</a></div>
+		<div id="bg"></div>
+	
+	<div id="logo">Gallery</div>
+	
+<div id="right-columnpro">
+			<div class="sidebar">
+				
+				<h3>Favourite Links</h3>
+				<div class="boxfav">
+					<a href="http://gmail.com" target="_blank"><img src="icons/gmail.ico" alt="Gmail" width="35" height="35">Gmail</a><br>
+					<a href="http://Yahoomail.com" target="_blank"><img src="icons/yahoo.ico" alt="Yahoo Mail" width="35" height="35">Yahoo Mail</a><br>
+					<a href="http://facebook.com" target="_blank"><img src="icons/facebook .ico" alt="Facebook" width="35" height="35">Facebook</a><br>
+					<a href="http://twitter.com" target="_blank"><img src="icons/twitter.ico" alt="Twitter" width="35" height="35">Twitter</a><br>
+					<a href="http://linkedin.com" target="_blank"><img src="icons/linkIn.ico" alt="LinkedIn" width="35" height="35">LinkedIn</a><br>
+						
+					
+				</div>
+			</div>
+		</div>
+
+
+<div id="main-content">
+		<div id="left-columnpro">
+		<div class="boxprogallery">
+			
+			  <img class="mySlides" src="gallery/001.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/002.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/003.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/004.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/005.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/006.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/007.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/008.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/009.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/010.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/011.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/012.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/013.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/014.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/015.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/016.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/017.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/018.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/019.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/020.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/021.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/022.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/023.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/024.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/025.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/026.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/027.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/028.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/029.jpg" alt="nature" width="100%" height="100%">
+			  <img class="mySlides" src="gallery/030.jpg" alt="nature" width="100%" height="100%">
+			  
+			
+
+			<div class="buttons">
+			  
+				<button  onclick="plusDivs(-1)">❮ Prev</button>
+				<button  onclick="plusDivs(1)">Next ❯</button>
+				</div>
+			  
+
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				 dots[i].className = dots[i].className.replace(" w3-red", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " w3-red";
+			}
+			</script>
+			</div>
+			<div id="footer">
+		Copyright &copy; 2018 Carlson Wickham. All rights reserved.<br>
+		
+	</div>
+</body>
+</head>
+</html>
